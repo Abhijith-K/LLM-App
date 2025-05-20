@@ -1,2 +1,2 @@
-# Open Source Powered LLM 
+# Open Source Powered LLM - Gemma3
 Experimenting the Ollama model locally
