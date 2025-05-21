@@ -1,5 +1,5 @@
-fastapi
-uvicorn
-streamlit
-requests
-ollama
+fastapi==0.115.12
+ollama==0.4.8
+requests==2.32.3
+streamlit==1.45.1
+uvicorn==0.34.2
