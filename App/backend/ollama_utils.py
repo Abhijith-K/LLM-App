@@ -5,6 +5,7 @@ import platform
 import shutil
 import json
 import ollama
+from backend.config import model_name
 
 def is_ollama_running():
     try:
@@ -38,7 +39,7 @@ def start_ollama():
 
 
 
-def generate_from_ollama(prompt: str, model: str = "gemma3"):
+def generate_from_ollama(prompt: str, model: str = model_name):
     """Send a prompt to the local Ollama model and return the response."""
     try:
 
@@ -59,3 +60,4 @@ def generate_from_ollama(prompt: str, model: str = "gemma3"):
     
     except requests.exceptions.RequestException as e:
         return f"❌ Request failed: {e}"
+
