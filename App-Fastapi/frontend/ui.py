@@ -31,7 +31,7 @@ if st.sidebar.button("🧹 Clear Chat"):
     st.session_state.chat_history = []
     if os.path.exists(CHAT_HISTORY_FILE):
         os.remove(CHAT_HISTORY_FILE)
-    st.experimental_rerun()
+    st.rerun()
 
 if st.sidebar.button("💾 Save Chat"):
     with open(CHAT_HISTORY_FILE, "w") as f:
